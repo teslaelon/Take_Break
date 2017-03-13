@@ -1,0 +1,13 @@
+import webbrowser
+import time
+i = 1
+t = time.localtime()
+reminder_time = int (raw_input("Enter the time interval you want to be reminded to relax in seconds: "))
+repeat_time = int (raw_input("Enter how many times you wanted to be reminded: "))
+
+
+while i <= repeat_time:
+    print 'The time is: ' ,time.strftime('%Y-%m-%d %A %H:%M',) , 'Which means its time to take a break \n'
+    time.sleep(reminder_time)
+    webbrowser.open("https://www.youtube.com/watch?v=tbyw_mOcMe0")
+    i = i + 1 
